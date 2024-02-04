@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E- School</title>
+    <!-- tailwind and daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- manrope google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
+    <!-- tailwind custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'red-color': '#FF4240',
+                        'black-color': '#282531',
+                        'green-color': '#21B573',
+                        'lgreen-color' : '#F0FFF0',
+                        'gray-color': '#56548C'
+                       
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="font-poppins max-w-[1440px] mx-auto bg-lgreen-color">    
+    <header class="bg-lgreen-color">
+        <!-- nav section  -->
+        <nav class="container max-w-[1170px] px-4 mx-auto bg-lgreen-color">
+            <div class="navbar bg-lgreen-color">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-lgreen-color rounded-box w-52">
+                            <li class="font-bold"><a>Books</a></li>
+                            <li class="font-bold"><a>Courses</a></li>
+                            <li class="font-bold"><a>Others</a></li>
+                            <li class="font-bold"><a>Blog</a></li>
+                        </ul>
+                    </div>
+                    <img src="./images/logo.png" alt="">
+                    <a class="text-2xl lg:text-4xl font-extrabold text-gray-color ml-2">E- School</a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li class="font-bold"><a>Books</a></li>
+                            <li class="font-bold"><a>Courses</a></li>
+                            <li class="font-bold"><a>Others</a></li>
+                            <li class="font-bold"><a>Blog</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn bg-green-color rounded-3xl px-7 py-3 text-white">Sign In</a>
+
+                </div>
+            </div>
+        </nav>
+        <!-- Banner Section -->
+        <section class="">
+            <div class="container max-w-[1170px] lg:my-20 px-4 my-8 mx-auto">
+                <div class="flex">
+                    <div>
+                        <h1>Are you ready to Learn?</h1>
+                        <h1>Learn With fun <br>
+                            on any schedule</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius blandit facilisis quam netus.
+                        </p>
+                        <a class="btn bg-green-color rounded-3xl px-7 py-3 text-white">Get Started</a>
+
+                    </div>
+
+                    <!-- Banner image -->
+                    <div>
+                        <img src="./images/banner.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+    </header>
+
+</body>

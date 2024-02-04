@@ -4,14 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment 3 Hockey's</title>
+    <title>E- School</title>
     <!-- tailwind and daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- manrope google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/d7b7563d24.js" crossorigin="anonymous"></script>
     <!-- tailwind custom color -->
@@ -21,7 +21,11 @@
                 extend: {
                     colors: {
                         'red-color': '#FF4240',
-                        'black-color': '#131318'
+                        'black-color': '#282531',
+                        'green-color': '#21B573',
+                        'lgreen-color' : '#F0FFF0',
+                        'gray-color': '#56548C'
+                       
                     }
                 }
             }
@@ -34,11 +38,11 @@
     </style>
 </head>
 
-<body class="font-poppins max-w-[1440px] mx-auto">
-    <header>
+<body class="font-poppins max-w-[1440px] mx-auto bg-lgreen-color">
+    <header class="bg-lgreen-color">
         <!-- nav section  -->
-        <nav class="container max-w-[1170px] px-4 my-8 mx-auto">
-            <div class="navbar bg-base-100">
+        <nav class="container max-w-[1170px] px-4 mx-auto bg-lgreen-color">
+            <div class="navbar bg-lgreen-color">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -49,34 +53,53 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li class="text-red-color font-bold"><a>Home</a></li>
-                            <li class="font-bold"><a>About</a></li>
-                            <li class="font-bold"><a>Pages</a></li>
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-lgreen-color rounded-box w-52">
+                            <li class="font-bold"><a>Books</a></li>
+                            <li class="font-bold"><a>Courses</a></li>
+                            <li class="font-bold"><a>Others</a></li>
                             <li class="font-bold"><a>Blog</a></li>
-                            <li class="font-bold"><a>Contact</a></li>
                         </ul>
                     </div>
-                    <a class="text-4xl font-extrabold">Hockey<span class="text-red-color">’</span></span>s</a>
+                    <img src="./images/logo.png" alt="">
+                    <a class="text-2xl lg:text-4xl font-extrabold text-gray-color ml-2">E- School</a>
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
-                        <li class="text-red-color font-bold"><a>Home</a></li>
-                        <li class="font-bold"><a>About</a></li>
-                        <li class="font-bold"><a>Pages</a></li>
-                        <li class="font-bold"><a>Blog</a></li>
-                        <li class="font-bold"><a>Contact</a></li>
-                    </ul>
-                </div>
+
                 <div class="navbar-end">
-                    <img src="./Images/search.png" class=" hidden lg:flex mr-6" alt="">
-                    <a class="btn bg-red-color text-[18px] lg:text-xl text-white font-bold">Get Ticket</a>
+                    <div class="hidden lg:flex">
+                        <ul class="menu menu-horizontal px-1">
+                            <li class="font-bold"><a>Books</a></li>
+                            <li class="font-bold"><a>Courses</a></li>
+                            <li class="font-bold"><a>Others</a></li>
+                            <li class="font-bold"><a>Blog</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn bg-green-color rounded-3xl px-7 py-3 text-white">Sign In</a>
+
                 </div>
             </div>
         </nav>
         <!-- Banner Section -->
         <section class="">
-            
+            <div class="container max-w-[1170px] lg:my-20 px-4 my-8 mx-auto">
+                <div class="flex">
+                    <div>
+                        <h1>Are you ready to Learn?</h1>
+                        <h1>Learn With fun <br>
+                            on any schedule</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius blandit facilisis quam netus.
+                        </p>
+                        <a class="btn bg-green-color rounded-3xl px-7 py-3 text-white">Get Started</a>
+
+                    </div>
+
+                    <!-- Banner image -->
+                    <div>
+                        <img src="./images/banner.png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
         </section>
     </header>
 
@@ -110,9 +133,9 @@
                             <div class="relative">
                                 <div class="absolute top-0 left-0 radial-progress text-[#E7E7E8]"
                                     style="--value:100; --size:8rem; --thickness: 1rem;" role="progressbar"></div>
-                            <div class="z-10 radial-progress text-[#49D293] rotate-90"
-                                style="--value:95; --size:8rem; --thickness: 1rem;" role="progressbar"> <span
-                                    class="text-3xl text-black-color font-extrabold -rotate-90">95%</span></div>
+                                <div class="z-10 radial-progress text-[#49D293] rotate-90"
+                                    style="--value:95; --size:8rem; --thickness: 1rem;" role="progressbar"> <span
+                                        class="text-3xl text-black-color font-extrabold -rotate-90">95%</span></div>
                             </div>
                             <p class="mt-6 text-2xl font-semibold">Experienced Coach</p>
                             <p class="mt-4 text-[#13131899]">Expert coach: Guides, motivates individuals.</p>
@@ -122,8 +145,8 @@
                                 <div class="absolute top-0 left-0 radial-progress text-[#E7E7E8]"
                                     style="--value:100; --size:8rem; --thickness: 1rem;" role="progressbar"></div>
                                 <div class="z-10 radial-progress text-[#FFb546] rotate-90"
-                                style="--value:90; --size:8rem; --thickness: 1rem;" role="progressbar"> <span
-                                    class="text-3xl text-black-color font-extrabold -rotate-90">90%</span></div>
+                                    style="--value:90; --size:8rem; --thickness: 1rem;" role="progressbar"> <span
+                                        class="text-3xl text-black-color font-extrabold -rotate-90">90%</span></div>
                             </div>
                             <p class="mt-6 text-2xl font-semibold">Senior Player</p>
                             <p class="mt-4 text-[#13131899]">Seasoned expertise contribute to team.</p>
@@ -133,8 +156,8 @@
                                 <div class="absolute top-0 left-0 radial-progress text-[#E7E7E8]"
                                     style="--value:100; --size:8rem; --thickness: 1rem;" role="progressbar"></div>
                                 <div class="radial-progress text-[#4C8DF1] rotate-90"
-                                style="--value:80; --size:8rem; --thickness: 1rem;" role="progressbar"> <span
-                                    class="text-3xl text-black-color font-extrabold -rotate-90">80%</span></div>
+                                    style="--value:80; --size:8rem; --thickness: 1rem;" role="progressbar"> <span
+                                        class="text-3xl text-black-color font-extrabold -rotate-90">80%</span></div>
                             </div>
                             <p class="mt-6 text-2xl font-semibold">Training Ground</p>
                             <p class="mt-4 text-[#13131899]">Crucial arena where skills are honed.</p>

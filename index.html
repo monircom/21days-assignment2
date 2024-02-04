@@ -19,13 +19,11 @@
         tailwind.config = {
             theme: {
                 extend: {
-                    colors: {
-                        'red-color': '#FF4240',
+                    colors: {                        
                         'black-color': '#282531',
                         'green-color': '#21B573',
                         'lgreen-color' : '#F0FFF0',
-                        'gray-color': '#56548C'
-                       
+                        'gray-color': '#56548C'                       
                     }
                 }
             }
@@ -41,7 +39,7 @@
 <body class="font-poppins max-w-[1440px] mx-auto">
     <header class="bg-lgreen-color">
         <!-- nav section  -->
-        <nav class="container max-w-[1170px] px-4 py-8 mx-auto bg-lgreen-color">
+        <nav class="container max-w-[1200px] px-4 py-8 mx-auto bg-lgreen-color">
             <div class="navbar bg-lgreen-color">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -79,89 +77,56 @@
             </div>
         </nav>
         <!-- Banner Section -->
-        <section class="">
-            <div class="container max-w-[1170px] lg:my-20 px-4 my-8 mx-auto">
-                <div class="flex">
-                    <div>
-                        <h1>Are you ready to Learn?</h1>
-                        <h1>Learn With fun <br>
-                            on any schedule</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Varius blandit facilisis quam netus.
-                        </p>
-                        <a class="btn bg-green-color rounded-3xl px-7 py-3 text-white">Get Started</a>
-
-                    </div>
-
+        <section class="">     
+            <div class="container max-w-[1200px] px-4 my-8 mx-auto">
+                <div class="flex flex-col lg:flex-row-reverse justify-between items-center">
                     <!-- Banner image -->
-                    <div>
-                        <img src="./images/banner.png" alt="">
+                    <div class="my-5">
+                        <img src="./images/banner.png" class="max-w-lg rounded-lg" alt="">
                     </div>
+                    <div class="py-5">
+                        <h1 class="text-[#FD511A] my-3">Are you ready to Learn?</h1>
+                        <h1 class="text-5xl/[70px] font-bold">Learn With fun <br>
+                            on <span class="text-green-color">any schedule</span></h1>
+                        <p class="text-[#6C6B6B] text-base/[36px] py-6 max-w-sm">Millions of people of all ages and from around 
+                            the world are improving their lives with us</p>
+                        <a class="btn bg-green-color rounded-3xl px-9 py-3 text-white">Get Started</a>
+                    </div>                    
                 </div>
-
             </div>
-
         </section>
     </header>
 
     <body>
         <main>
-            <!-- Hockeys Club Section -->
+            <!-- Statistics Section -->
             <section>
-                <div class="container max-w-[1170px] lg:my-20 px-4 my-8 mx-auto">
-                    <div
-                        class="flex flex-col justify-center text-center items-center border-dashed border-b-2 border-t-2 border-[#13131833]">
-                        <h1 class="mt-8 text-2xl lg:text-4xl font-extrabold">Professional Hockeys Club</h1>
-                        <p class="my-8 text-[#13131899] font-medium max-w-[610px]">The professional hockey club, with
-                            its
-                            skilled athletes
-                            and dedicated staff, strives for excellence both on and off the ice.</p>
-                    </div>
-                    <div class="flex flex-col lg:flex-row lg:gap-4 lg:justify-around">
-                        <div class=" flex flex-col justify-center text-center items-center mt-12">
-                            <div class="relative">
-                                <div class="absolute top-0 left-0 radial-progress text-[#E7E7E8]"
-                                    style="--value:100; --size:8rem; --thickness: 1rem;" role="progressbar"></div>
-                                <div class="z-10 radial-progress text-[#FF4240] rotate-90"
-                                    style="--value:87; --size:8rem; --thickness: 1rem;" role="progressbar">
-                                    <span class="text-3xl text-black-color font-extrabold -rotate-90">87%</span>
-                                </div>
-                            </div>
-                            <p class="mt-6 text-2xl font-semibold">Prayer Facility</p>
-                            <p class="mt-4 text-[#13131899]">Offering solace in a tranquil environment..</p>
+                <div class="container max-w-[1200px] lg:my-20 px-4 my-8 mx-auto">
+                    
+                    <div class="grid gap-8 grid-cols-1 lg:grid-cols-4">
+                        <div class=" flex flex-col justify-center text-center items-center mt-12 py-12 bg-[#F5FFFA] rounded-xl">
+                           <img src="./images/stat1.png" alt="">
+                            <p class="mt-6 text-2xl font-semibold">1500+ Topic</p>
+                            <p class="mt-4 text-[#13131899]">Learn Anythings</p>
                         </div>
-                        <div class=" flex flex-col justify-center text-center items-center mt-12">
-                            <div class="relative">
-                                <div class="absolute top-0 left-0 radial-progress text-[#E7E7E8]"
-                                    style="--value:100; --size:8rem; --thickness: 1rem;" role="progressbar"></div>
-                                <div class="z-10 radial-progress text-[#49D293] rotate-90"
-                                    style="--value:95; --size:8rem; --thickness: 1rem;" role="progressbar"> <span
-                                        class="text-3xl text-black-color font-extrabold -rotate-90">95%</span></div>
-                            </div>
-                            <p class="mt-6 text-2xl font-semibold">Experienced Coach</p>
-                            <p class="mt-4 text-[#13131899]">Expert coach: Guides, motivates individuals.</p>
-                        </div>
-                        <div class=" flex flex-col justify-center text-center items-center mt-12">
-                            <div class="relative">
-                                <div class="absolute top-0 left-0 radial-progress text-[#E7E7E8]"
-                                    style="--value:100; --size:8rem; --thickness: 1rem;" role="progressbar"></div>
-                                <div class="z-10 radial-progress text-[#FFb546] rotate-90"
-                                    style="--value:90; --size:8rem; --thickness: 1rem;" role="progressbar"> <span
-                                        class="text-3xl text-black-color font-extrabold -rotate-90">90%</span></div>
-                            </div>
-                            <p class="mt-6 text-2xl font-semibold">Senior Player</p>
-                            <p class="mt-4 text-[#13131899]">Seasoned expertise contribute to team.</p>
-                        </div>
-                        <div class=" flex flex-col justify-center text-center items-center mt-12">
-                            <div class="relative">
-                                <div class="absolute top-0 left-0 radial-progress text-[#E7E7E8]"
-                                    style="--value:100; --size:8rem; --thickness: 1rem;" role="progressbar"></div>
-                                <div class="radial-progress text-[#4C8DF1] rotate-90"
-                                    style="--value:80; --size:8rem; --thickness: 1rem;" role="progressbar"> <span
-                                        class="text-3xl text-black-color font-extrabold -rotate-90">80%</span></div>
-                            </div>
-                            <p class="mt-6 text-2xl font-semibold">Training Ground</p>
-                            <p class="mt-4 text-[#13131899]">Crucial arena where skills are honed.</p>
-                        </div>
+                        <div class=" flex flex-col justify-center text-center items-center mt-12 shadow-lg rounded-xl">
+                            <img src="./images/stat2.png" alt="">
+                             <p class="mt-6 text-2xl font-semibold">1800+ Students</p>
+                             <p class="mt-4 text-[#13131899]">Learn Anythings</p>
+                         </div>
+
+                         <div class=" flex flex-col justify-center text-center items-center mt-12 bg-[#F5FFFA] rounded-xl">
+                            <img src="./images/stat3.png" alt="">
+                             <p class="mt-6 text-2xl font-semibold">9K+ Test Token</p>
+                             <p class="mt-4 text-[#13131899]">Learn Anythings</p>
+                         </div>
+
+                         <div class=" flex flex-col justify-center text-center items-center mt-12 bg-[#F5FFFA] rounded-xl">
+                            <img src="./images/stat4.png" alt="">
+                             <p class="mt-6 text-2xl font-semibold">2000+ Student</p>
+                             <p class="mt-4 text-[#13131899]">Learn Anythings</p>
+                         </div>
+                        
                     </div>
                 </div>
 
@@ -169,289 +134,132 @@
             </section>
 
 
-            <!-- New product Section  -->
+            <!-- Courses Section  -->
             <section>
-                <div class="container max-w-[1170px] lg:my-20 px-4 my-8 mx-auto">
+                <div class="container max-w-[1200px] lg:my-20 px-4 my-8 mx-auto bg-[#FFF]">
                     <div
-                        class="flex flex-col justify-center text-center items-center border-dashed border-b-2 border-t-2 border-[#13131833]">
-                        <h1 class="mt-8 text-2xl lg:text-4xl font-extrabold">Our New Products</h1>
-                        <p class="my-8 text-[#13131899] font-medium max-w-[600px]">Introducing our latest lineup of
-                            innovative products, each crafted to redefine excellence and enhance user experiences. From
-                            cutting-edge technology to thoughtful design, our new offerings cater to diverse needs,
-                            promising quality, and performance.</p>
+                        class="flex flex-col justify-center text-center items-center">
+                        <h1 class="mt-8 text-2xl lg:text-4xl font-bold">Online Courses</h1>                        
                     </div>
                     <!-- product gallery  -->
-                    <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 lg:pt-6 mt-6">
+                    <div class="grid gap-6 grid-cols-1 lg:grid-cols-3 lg:pt-6 mt-6">
 
-                        <!-- First Product -->
+                        <!-- First Course -->
                         <div
-                            class="p-6 border-[1px] space-y-5 lg:space-y-0 lg:space-x-5 flex flex-col lg:flex-row rounded-2xl">
-                            <div class="w-[100%] lg:w-5/12">
-                                <img class="hidden lg:flex w-full h-full object-contain rounded-2xl"
-                                    src="./Images/5.png" />
-                                <img class="lg:hidden rounded-2xl w-full object-cover" src="./Images/sm5.png" alt="">
+                            class="p-6 border-[1px] flex flex-col rounded-2xl shadow-lg bg-[#FFFFFF]">
+                            <div class="w-[100%]">
+                                <img class="flex w-full h-full object-cover rounded-2xl"
+                                    src="./images/course1.png" />                                
                             </div>
-                            <div class="space-y-4">
-                                <div class="space-y-3">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/star.png" alt="" />
-                                            <p class="text-[#13131899]">5.0</p>
-                                        </div>
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/eye.png" alt="" />
-                                            <p class="text-[#13131899]">20</p>
-                                        </div>
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/love.png" alt="" />
-                                            <p class="text-[#13131899]">200</p>
-                                        </div>
-                                    </div>
+                            <div class="">
+                                <div class="">                                    
                                     <h2 class="text-black-color text-xl font-extrabold">
-                                        Jacket For Hockeys
-                                    </h2>
-                                    <p class="text-[#13131899] font-medium">
-                                        a symbol of unity and passion for the beautiful game.
-                                    </p>
+                                        Modern Psychology
+                                    </h2>                                    
                                 </div>
-                                <div class="flex flex-col items-start lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5">
+                                <div class="flex flex-col items-start">
                                     <div>
-                                        <h2 class="text-red-color text-[1.125rem] font-extrabold">
+                                        <h2 class="text-[#585859] ">
                                             Price - $22.00
                                         </h2>
                                     </div>
-                                    <div class="flex space-x-2 justify-center items-center">
-                                        <img src="./Images/shop.png" alt="" />
-                                        <p class="text-[#13131880]">Delivery Fee : Free</p>
+                                    <div class="flex justify-start items-center">
+                                        <a class="btn bg-green-color rounded-3xl px-7 py-2 text-white">Buy Course</a>
                                     </div>
+                                </div>
+                                <div class="flex justify-between items-center space-x-4">
+                                    <div class="flex space-x-2">
+                                        <img src="./images/calendar.png" alt="" />
+                                        <p class="text-[#585859]">Start 20  April, 2021</p>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <img src="./images/people.png" alt="" />
+                                        <p class="text-[#585859]">60 seats</p>
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
 
-                        <!-- Second Product -->
-
+                        <!-- Second Course -->
                         <div
-                            class="p-6 border-[1px] space-y-5 lg:space-y-0 lg:space-x-5 flex flex-col lg:flex-row rounded-2xl">
-                            <div class="w-[100%] lg:w-5/12">
-                                <img class="hidden lg:flex w-full h-full object-contain rounded-2xl"
-                                    src="./Images/6.png" />
-                                <img class="lg:hidden rounded-2xl w-full object-cover" src="./Images/sm6.png" alt="">
+                            class="p-6 border-[1px] flex flex-col rounded-2xl shadow-lg bg-[#FFFFFF]">
+                            <div class="w-[100%]">
+                                <img class="flex w-full h-full object-cover rounded-2xl"
+                                    src="./images/course2.png" />                                
                             </div>
-                            <div class="space-y-4">
-                                <div class="space-y-3">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/star.png" alt="" />
-                                            <p class="text-[#13131899]">5.0</p>
-                                        </div>
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/eye.png" alt="" />
-                                            <p class="text-[#13131899]">20</p>
-                                        </div>
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/love.png" alt="" />
-                                            <p class="text-[#13131899]">200</p>
-                                        </div>
-                                    </div>
+                            <div class="">
+                                <div class="">                                    
                                     <h2 class="text-black-color text-xl font-extrabold">
-                                        World Cup Flags Football
-                                    </h2>
-                                    <p class="text-[#13131899] font-medium">
-                                        a symbol of unity and passion for the beautiful game.
-                                    </p>
+                                        Modern Psychology
+                                    </h2>                                    
                                 </div>
-                                <div class="flex flex-col items-start lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5">
+                                <div class="flex flex-col items-start">
                                     <div>
-                                        <h2 class="text-red-color text-[1.125rem] font-extrabold">
+                                        <h2 class="text-[#585859] ">
                                             Price - $22.00
                                         </h2>
                                     </div>
-                                    <div class="flex space-x-2 justify-center items-center">
-                                        <img src="./Images/shop.png" alt="" />
-                                        <p class="text-[#13131880]">Delivery Fee : Free</p>
+                                    <div class="flex justify-start items-center">
+                                        <a class="btn bg-green-color rounded-3xl px-7 py-2 text-white">Buy Course</a>
                                     </div>
+                                </div>
+                                <div class="flex justify-between items-center space-x-4">
+                                    <div class="flex space-x-2">
+                                        <img src="./images/calendar.png" alt="" />
+                                        <p class="text-[#585859]">Start 20  April, 2021</p>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <img src="./images/people.png" alt="" />
+                                        <p class="text-[#585859]">60 seats</p>
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
+
 
                         <!-- 3rd Product -->
-
                         <div
-                            class="p-6 border-[1px] space-y-5 lg:space-y-0 lg:space-x-5 flex flex-col lg:flex-row rounded-2xl">
-                            <div class="w-[100%] lg:w-5/12">
-                                <img class="hidden lg:flex w-full h-full object-contain rounded-2xl"
-                                    src="./Images/7.png" />
-                                <img class="lg:hidden rounded-2xl w-full object-cover" src="./Images/sm7.png" alt="">
+                            class="p-6 border-[1px] flex flex-col rounded-2xl shadow-lg bg-[#FFFFFF]">
+                            <div class="w-[100%]">
+                                <img class="flex w-full h-full object-cover rounded-2xl"
+                                    src="./images/course3.png" />                                
                             </div>
-                            <div class="space-y-4">
-                                <div class="space-y-3">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/star.png" alt="" />
-                                            <p class="text-[#13131899]">5.0</p>
-                                        </div>
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/eye.png" alt="" />
-                                            <p class="text-[#13131899]">20</p>
-                                        </div>
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/love.png" alt="" />
-                                            <p class="text-[#13131899]">200</p>
-                                        </div>
-                                    </div>
+                            <div class="">
+                                <div class="">                                    
                                     <h2 class="text-black-color text-xl font-extrabold">
-                                        Cap For Hockeys
-                                    </h2>
-                                    <p class="text-[#13131899] font-medium">
-                                        a symbol of unity and passion for the beautiful game.
-                                    </p>
+                                        Modern Psychology
+                                    </h2>                                    
                                 </div>
-                                <div class="flex flex-col items-start lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5">
+                                <div class="flex flex-col items-start">
                                     <div>
-                                        <h2 class="text-red-color text-[1.125rem] font-extrabold">
+                                        <h2 class="text-[#585859] ">
                                             Price - $22.00
                                         </h2>
                                     </div>
-                                    <div class="flex space-x-2 justify-center items-center">
-                                        <img src="./Images/shop.png" alt="" />
-                                        <p class="text-[#13131880]">Delivery Fee : Free</p>
+                                    <div class="flex justify-start items-center">
+                                        <a class="btn bg-green-color rounded-3xl px-7 py-2 text-white">Buy Course</a>
                                     </div>
+                                </div>
+                                <div class="flex justify-between items-center space-x-4">
+                                    <div class="flex space-x-2">
+                                        <img src="./images/calendar.png" alt="" />
+                                        <p class="text-[#585859]">Start 20  April, 2021</p>
+                                    </div>
+                                    <div class="flex space-x-2">
+                                        <img src="./images/people.png" alt="" />
+                                        <p class="text-[#585859]">60 seats</p>
+                                    </div>                                    
                                 </div>
                             </div>
                         </div>
 
+                       
                         <!-- 4th Product -->
-                        <div
-                            class="p-6 border-[1px] space-y-5 lg:space-y-0 lg:space-x-5 flex flex-col lg:flex-row rounded-2xl">
-                            <div class="w-[100%] lg:w-5/12">
-                                <img class="hidden lg:flex w-full h-full object-contain rounded-2xl"
-                                    src="./Images/8.png" />
-                                <img class="lg:hidden rounded-2xl w-full object-cover" src="./Images/sm8.png" alt="">
-                            </div>
-                            <div class="space-y-4">
-                                <div class="space-y-3">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/star.png" alt="" />
-                                            <p class="text-[#13131899]">5.0</p>
-                                        </div>
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/eye.png" alt="" />
-                                            <p class="text-[#13131899]">20</p>
-                                        </div>
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/love.png" alt="" />
-                                            <p class="text-[#13131899]">200</p>
-                                        </div>
-                                    </div>
-                                    <h2 class="text-black-color text-xl font-extrabold">
-                                        Jersey For Hockeys
-                                    </h2>
-                                    <p class="text-[#13131899] font-medium">
-                                        a symbol of unity and passion for the beautiful game.
-                                    </p>
-                                </div>
-                                <div class="flex flex-col items-start lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5">
-                                    <div>
-                                        <h2 class="text-red-color text-[1.125rem] font-extrabold">
-                                            Price - $22.00
-                                        </h2>
-                                    </div>
-                                    <div class="flex space-x-2 justify-center items-center">
-                                        <img src="./Images/shop.png" alt="" />
-                                        <p class="text-[#13131880]">Delivery Fee : Free</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <!-- 5th Product -->
-                        <div
-                            class="p-6 border-[1px] space-y-5 lg:space-y-0 lg:space-x-5 flex flex-col lg:flex-row rounded-2xl">
-                            <div class="w-[100%] lg:w-5/12">
-                                <img class="hidden lg:flex w-full h-full object-contain rounded-2xl"
-                                    src="./Images/9.png" />
-                                <img class="lg:hidden rounded-2xl w-full object-cover" src="./Images/sm9.png" alt="">
-                            </div>
-                            <div class="space-y-4">
-                                <div class="space-y-3">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/star.png" alt="" />
-                                            <p class="text-[#13131899]">5.0</p>
-                                        </div>
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/eye.png" alt="" />
-                                            <p class="text-[#13131899]">20</p>
-                                        </div>
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/love.png" alt="" />
-                                            <p class="text-[#13131899]">200</p>
-                                        </div>
-                                    </div>
-                                    <h2 class="text-black-color text-xl font-extrabold">
-                                        Helmet For Hockeys
-                                    </h2>
-                                    <p class="text-[#13131899] font-medium">
-                                        a symbol of unity and passion for the beautiful game.
-                                    </p>
-                                </div>
-                                <div class="flex flex-col items-start lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5">
-                                    <div>
-                                        <h2 class="text-red-color text-[1.125rem] font-extrabold">
-                                            Price - $22.00
-                                        </h2>
-                                    </div>
-                                    <div class="flex space-x-2 justify-center items-center">
-                                        <img src="./Images/shop.png" alt="" />
-                                        <p class="text-[#13131880]">Delivery Fee : Free</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                       
                         <!-- 6th Product -->
-                        <div
-                            class="p-6 border-[1px] space-y-5 lg:space-y-0 lg:space-x-5 flex flex-col lg:flex-row rounded-2xl">
-                            <div class="w-[100%] lg:w-5/12">
-                                <img class="hidden lg:flex w-full h-full object-contain rounded-2xl"
-                                    src="./Images/10.png" />
-                                <img class="lg:hidden rounded-2xl w-full object-cover" src="./Images/sm10.png" alt="">
-                            </div>
-                            <div class="space-y-4">
-                                <div class="space-y-3">
-                                    <div class="flex items-center space-x-4">
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/star.png" alt="" />
-                                            <p class="text-[#13131899]">5.0</p>
-                                        </div>
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/eye.png" alt="" />
-                                            <p class="text-[#13131899]">20</p>
-                                        </div>
-                                        <div class="flex space-x-2">
-                                            <img src="./Images/love.png" alt="" />
-                                            <p class="text-[#13131899]">200</p>
-                                        </div>
-                                    </div>
-                                    <h2 class="text-black-color text-xl font-extrabold">
-                                        World Cup Flags Football
-                                    </h2>
-                                    <p class="text-[#13131899] font-medium">
-                                        a symbol of unity and passion for the beautiful game.
-                                    </p>
-                                </div>
-                                <div class="flex flex-col items-start lg:flex-row space-y-4 lg:space-y-0 lg:space-x-5">
-                                    <div>
-                                        <h2 class="text-red-color text-[1.125rem] font-extrabold">
-                                            Price - $22.00
-                                        </h2>
-                                    </div>
-                                    <div class="flex space-x-2 justify-center items-center">
-                                        <img src="./Images/shop.png" alt="" />
-                                        <p class="text-[#13131880]">Delivery Fee : Free</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
 
                 </div>

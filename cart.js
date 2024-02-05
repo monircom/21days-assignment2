@@ -77,10 +77,10 @@ btn2.addEventListener("click", function () {
   </div>
   <div class="mb-5 ml-2 mr-5">
       <h2 class="text-black-color">
-          Modern Psychology
+      Literature Reading
       </h2>
       <h2 class="text-[#585859] ">
-          1300 TK
+          1800 TK
       </h2>
   </div>
   <div class="">
@@ -114,10 +114,10 @@ btn3.addEventListener("click", function () {
    </div>
    <div class="mb-5 ml-2 mr-5">
        <h2 class="text-black-color">
-           Modern Psychology
+       Computer Science
        </h2>
        <h2 class="text-[#585859] ">
-           1300 TK
+           1600 TK
        </h2>
    </div>
    <div class="">
@@ -151,10 +151,10 @@ btn3.addEventListener("click", function () {
    </div>
    <div class="mb-5 ml-2 mr-5">
        <h2 class="text-black-color">
-           Modern Psychology
+       Time Management
        </h2>
        <h2 class="text-[#585859] ">
-           1300 TK
+           1400 TK
        </h2>
    </div>
    <div class="">
@@ -189,10 +189,10 @@ btn3.addEventListener("click", function () {
    </div>
    <div class="mb-5 ml-2 mr-5">
        <h2 class="text-black-color">
-           Modern Psychology
+       Library Management
        </h2>
        <h2 class="text-[#585859] ">
-           1300 TK
+           1200 TK
        </h2>
    </div>
    <div class="">
@@ -227,10 +227,10 @@ btn3.addEventListener("click", function () {
    </div>
    <div class="mb-5 ml-2 mr-5">
        <h2 class="text-black-color">
-           Modern Psychology
+       Human Resource
        </h2>
        <h2 class="text-[#585859] ">
-           1300 TK
+           1500 TK
        </h2>
    </div>
    <div class="">
